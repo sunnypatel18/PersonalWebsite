@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+<body>
+
+<!-- start styleswitcher, remove this -->
+<div class="switcher"></div>
+<!-- end styleswitcher -->
+
+<!-- Preloader -->
+<div class="mask">
+    <div id="loader"></div>
+</div>
+<!--/Preloader -->
+
+<div class="menu-btn-left">
+    <img alt="" src="/img/nav.svg">
+</div>
+
+<!-- start navigation -->
+
+<nav class="pushy pushy-left">
+
+    <div class="logo-small">
+        <a class="inner-link" href="/home"><img class="logo nav-logo"
+                                                alt="Kurr"
+                                                src="/img/myProfilePicture2.jpg"></a><br>
+    </div>
+
+
+    <!--start bottom menu content -->
+    <div class="bottom-content">
+        <span>Ratchapong Tangkijvorakul</span><br>
+        <span><a href="mailto:ratchapong.t@gmail.com">ratchapong.t@gmail.com</a></span><br>
+        <span>(470) 226 6955</span>
+
+    </div>
+    <!-- end bottom menu content -->
+
+    <!-- start menu -->
+    <ul class="menu">
+        <li style="background-color: #00b4ff"><a class="inner-link"
+                                                 href="/projects">
+                All Projects</a></li>
+        <li><a class="inner-link" href="#overview">Overview</a></li>
+        <li><a class="inner-link" href="#program">Program Used</a></li>
+        <li><a class="inner-link" href="#showcase">Showcase</a></li>
+    </ul>
+    <!-- end menu -->
+
+
+</nav>
+
+
+<div class="site-overlay"></div>
+
+
+<!-- end section #home -->
+
+<div id="wrapper">
+    <section id="title">
+        <h1 align="center"><%= title %></h1>
+    </section>
+    <section id="overview" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+            <h2 style="margin-bottom: 30px"><strong>Project Overview</strong>
+            </h2>
+
+            <p>I was given a GUI that represents the world, both the snowy
+                north, and the grassy
+                south. Within this world I built classes that represent
+                five Houses (families) from the
+                show. An addition house (Rathalos) was introduced just for fun.
+                Logic was formed to make people (instances) from those
+                Houses interact with
+                other Houses by either reproducing or fighting an instance of
+                the other House.
+
+                The main purpose of this assignment is to implement the
+                hierarchy of Houses within the
+                world of Westeros. The houses properties are described here.</p>
+
+            <h4>Northern Houses</h4>
+
+            <p>
+                Northerners are hardy, strong fellows. As such, they get a
+                health bonus when roaming in
+                their own lands. When a NorthHouse moves in the northern half
+                of the GUI, its health will be increased by some value.
+            </p>
+
+            <div align="center" ; style="text-align: center">
+                <img src="/portfolio/gameofthrones/north/direwolf.png"
+                     alt=""
+                     style="width:100px;"/>
+                <h4 class="chart-title"
+                    style="text-transform:none">Stark</h4>
+            </div>
+            <p>
+                Members of House Stark only reproduce with members of
+                House Tully. When colliding with a member of House
+                Lannister, House Stark has a 40% chance
+                of wounding them. Members of House Stark live to an
+                older age than anyone other than House Tully
+            </p>
+
+            <div align="center" ; style="text-align: center">
+                <img src="/portfolio/gameofthrones/north/trout.png" alt=""
+                     style="width:100px;"/>
+                <h4 class="chart-title"
+                    style="text-transform:none">Tully</h4>
+            </div>
+            <p>Members of House Tully only reproduce with members of
+                House Stark
+                When colliding with a member of House Lannister, House
+                Tully has a 20% chance of wounding them. Members of
+                House
+                Tully live to an older age than any other house.
+            </p>
+
+            <h4>Southern Houses</h4>
+
+            <p>
+                Southerners thrive on the grasslands that populate southern
+                Westeros. As such, they get a
+                speed boost when roaming in their own lands. When a SouthHouse
+                moves in the southern
+                half of the GUI, they will move faster than when they are in
+                the north.
+            </p>
+
+            <div align="center" ; style="text-align: center">
+                <img src="/portfolio/gameofthrones/south/lion.png" alt=""
+                     style="width:100px;"/>
+                <h4 class="chart-title"
+                    style="text-transform:none">Lannister</h4>
+            </div>
+            <p>Instances of House Lannister reproduce with instances of House
+                Baratheon or House
+                Lannister. When colliding with a member of House Stark, House
+                Lannister has a 60% chance
+                of wounding them. When colliding with a member of House
+                Tully, House Lannister has an 80% chance
+                of wounding them. Members of House Lannister live to the
+                smallest age of all of the houses.
+            </p>
+
+            <div align="center" ; style="text-align: center">
+                <img src="/portfolio/gameofthrones/south/stag.png"
+                     alt=""
+                     style="width:100px;"/>
+                <h4 class="chart-title"
+                    style="text-transform:none">Baratheon</h4>
+            </div>
+            <p>
+                Instances of House Baratheon reproduce with instances of
+                House Lannister. House Baratheon can wound members of House
+                Targaryan but no other house. Members of House Baratheon live to
+                an older age than House Lannister, but no other
+                house.
+            </p>
+
+            <h4>No Homeland</h4>
+
+
+            <p>
+                Northerners are hardy, strong fellows. As such, they get a
+                health bonus when roaming in
+                their own lands. When a NorthHouse moves in the northern half
+                of the GUI, its health will be increased by some value.
+            </p>
+
+            <div align="center" ; style="text-align: center">
+                <img src="/portfolio/gameofthrones/free/dragon.png"
+                     alt=""
+                     style="width:100px;"/>
+                <h4 class="chart-title"
+                    style="text-transform:none">Targaryan</h4>
+            </div>
+            <p>
+                Instances of House Targaryan only reproduce with other
+                instances of House Targaryan. House Targaryan can wound
+                members of all other houses, other than House Baratheon. Members
+                of House Targaryan live forever (unless they die in the glory of
+                combat).
+            </p>
+
+            <div align="center" ; style="text-align: center">
+                <img src="/portfolio/gameofthrones/free/rathalos.png" alt=""
+                     style="width:100px;"/>
+                <h4 class="chart-title"
+                    style="text-transform:none">Rathalos</h4>
+            </div>
+            <p>When colliding with any member, House Rathalos has a 90% chance
+                of wounding them. If the hit occur, House Rathalos has a 70%
+                to be 1 year younger by feeding off Targaryan
+                immortality-ness. If the hit occur, House Rathalos has a 50%
+                to life steal 4.5 health.
+            </p>
+
+            <h4>Example Output</h4>
+
+            <div align="center">
+                <img src="/portfolio/gameofthrones/gameofthronesexample.png"
+                     alt=""
+                     style="width:50%;"/>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="program" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+
+            <h2 style="margin-bottom: 30px"><strong>Programming
+                    Software/Languages</strong></h2>
+
+
+            <div style="margin-right: 50px;float: left;width: 150px;
+            text-align:
+            center">
+                <img src="/img/software/windows7.jpg" alt=""
+                     style="width:150px;"/>
+                <h4 class="chart-title" style="text-transform:none">
+                    Windows 7</h4>
+
+                <p>Java Swing will behaves differently on other platform.
+                    This project is coded on Windows 7.
+                </p>
+            </div>
+
+            <div style="margin-right: 50px;float: left;width: 150px;
+            text-align:
+            center">
+                <img src="/img/software/intellij.png" alt=""
+                     style="width:150px;"/>
+                <h4 class="chart-title" style="text-transform:none">
+                    IntelliJ IDE</h4>
+
+                <p>This project can be compiled using command-line. However,
+                    it is easier to use IDE.
+                </p>
+            </div>
+
+            <div style="float: left;width: 150px; text-align:
+            center">
+                <img src="/img/software/java.jpg" alt=""
+                     style="width:150px; "/>
+                <h4 class="chart-title" style="text-transform:none">
+                    Java</h4>
+
+                <p>Version 1.8 was used for this project.</p>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <section id="showcase" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+            <h2 style="margin-bottom: 30px"><strong>Project
+                    Showcase</strong></h2>
+            <h4 style="margin-top: 30px"><strong>Final Result</strong></h4>
+
+
+            <p>I implemented extra features for the project as I explored
+                Java Swing.
+            </p>
+
+            <ul>
+                <li>Health bar and age display for each house</li>
+                <li>Custom legend to display logo information</li>
+
+                <li>Abilities GIF was implemented
+                    to show that the ability was active on the houses
+                </li>
+                <li>Reproduction status</li>
+                <li>Speed listener to change the game pace</li>
+                <li>Added background to decorate the GUI</li>
+            </ul>
+
+            <h4 style="margin-top: 30px"><strong>Demo</strong></h4>
+
+
+            <div align="center">
+
+                <video controls loop
+                       src="/portfolio/gameofthrones/gameofthrones.mp4"
+                       style="width: 100%; margin-top: 10px;
+                   margin-bottom: 30px"></video>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <% include ../sections/contact.ejs %>
+
+</div>
+<!-- end wrapper -->
+
+<% include ../partials/jsdefaults.ejs %>
+
+<script>
+    $(document).foundation();
+</script>
+
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>
+

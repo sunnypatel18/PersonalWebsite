@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+<body>
+
+<!-- start styleswitcher, remove this -->
+<div class="switcher"></div>
+<!-- end styleswitcher -->
+
+<!-- Preloader -->
+<div class="mask">
+    <div id="loader"></div>
+</div>
+<!--/Preloader -->
+
+<div class="menu-btn-left">
+    <img alt="" src="/img/nav.svg">
+</div>
+
+<!-- start navigation -->
+
+<nav class="pushy pushy-left">
+
+    <div class="logo-small">
+        <a class="inner-link" href="/home"><img class="logo nav-logo"
+                                                alt="Kurr"
+                                                src="/img/myProfilePicture2.jpg"></a><br>
+    </div>
+
+
+    <!--start bottom menu content -->
+    <div class="bottom-content">
+        <span>Ratchapong Tangkijvorakul</span><br>
+        <span><a href="mailto:ratchapong.t@gmail.com">ratchapong.t@gmail.com</a></span><br>
+        <span>(470) 226 6955</span>
+
+    </div>
+    <!-- end bottom menu content -->
+
+    <!-- start menu -->
+    <ul class="menu">
+        <li style="background-color: #00b4ff"><a class="inner-link"
+                                                 href="/projects">
+                All Projects</a></li>
+        <li><a class="inner-link" href="#overview">Overview</a></li>
+        <li><a class="inner-link" href="#program">Program Used</a></li>
+        <li><a class="inner-link" href="#showcase">Showcase</a></li>
+    </ul>
+    <!-- end menu -->
+
+
+</nav>
+
+
+<div class="site-overlay"></div>
+
+
+<!-- end section #home -->
+
+<div id="wrapper">
+    <section id="title">
+        <h1 align="center"><%= title %></h1>
+    </section>
+    <section id="overview" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+            <h2 style="margin-bottom: 30px"><strong>Project Overview</strong>
+            </h2>
+
+            <p>The main goal of the project is to design a prototype using
+                User Interface Design principles. This requires us to
+                understand the topic definition, problems, design
+                alternatives and evaluations. During the phase of each
+                mini-project, we required to interview, observes certain
+                group of users to better understand their perspective in
+                implementing indoor navigation. The complete write up for
+                each part of project can be downloaded. The showcase below
+                just show some of the design that were made. The document
+                was praised by the professor for its readability.</p>
+
+            <div align="center"><a class="cv_btn" title=""
+                                   href="/download/indoornavigation.pdf">download
+                    writeup</a></div>
+
+
+        </div>
+
+    </section>
+
+    <section id="showcase" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+            <h2 style="margin-bottom: 30px"><strong>Project
+                    Showcase</strong></h2>
+            <h4 style="margin-top: 30px"><strong>Prototype Proposal
+                    Poster</strong></h4>
+
+            <p>The first proposal poster. The professor loves the poster
+                design so much that she wants to use this poster for her
+                future class reference!</p>
+            <img src="/portfolio/indoornavigation/poster1.png" alt=""
+                 style="width:100%; "/>
+            <h4 style="margin-top: 30px"><strong>Application Prototype</strong>
+            </h4>
+
+            <div align="center">
+                <video controls loop
+                       src="/portfolio/indoornavigation/prototype.mp4"
+                       style="width: 50%; margin-top: 30px;
+                   margin-bottom: 30px"></video>
+            </div>
+
+            <h4 style="margin-top: 30px"><strong>Final Design
+                    Poster</strong></h4>
+
+            <p>This poster was presented in an important event. Many
+                professors came by to the booth to inquire about the poster.</p>
+            <img src="/portfolio/indoornavigation/poster2.png" alt=""
+                 style="width:100%; "/>
+        </div>
+
+
+    </section>
+
+    <% include ../sections/contact.ejs %>
+
+</div>
+<!-- end wrapper -->
+
+<% include ../partials/jsdefaults.ejs %>
+
+<script>
+    $(document).foundation();
+</script>
+
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>
+

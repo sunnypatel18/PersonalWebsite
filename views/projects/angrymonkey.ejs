@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+<body>
+
+<!-- start styleswitcher, remove this -->
+<div class="switcher"></div>
+<!-- end styleswitcher -->
+
+<!-- Preloader -->
+<div class="mask">
+    <div id="loader"></div>
+</div>
+<!--/Preloader -->
+
+<div class="menu-btn-left">
+    <img alt="" src="/img/nav.svg">
+</div>
+
+<!-- start navigation -->
+
+<nav class="pushy pushy-left">
+
+    <div class="logo-small">
+        <a class="inner-link" href="/home"><img class="logo nav-logo"
+                                                alt="Kurr"
+                                                src="/img/myProfilePicture2.jpg"></a><br>
+    </div>
+
+
+    <!--start bottom menu content -->
+    <div class="bottom-content">
+        <span>Ratchapong Tangkijvorakul</span><br>
+        <span><a href="mailto:ratchapong.t@gmail.com">ratchapong.t@gmail.com</a></span><br>
+        <span>(470) 226 6955</span>
+
+    </div>
+    <!-- end bottom menu content -->
+
+    <!-- start menu -->
+    <ul class="menu">
+        <li style="background-color: #00b4ff"><a class="inner-link"
+                                                 href="/projects">
+                All Projects</a></li>
+        <li><a class="inner-link" href="#overview">Overview</a></li>
+        <li><a class="inner-link" href="#program">Program Used</a></li>
+        <li><a class="inner-link" href="#showcase">Showcase</a></li>
+    </ul>
+    <!-- end menu -->
+
+
+</nav>
+
+
+<div class="site-overlay"></div>
+
+
+<!-- end section #home -->
+
+<div id="wrapper">
+    <section id="title">
+        <h1 align="center"><%= title %></h1>
+    </section>
+    <section id="overview" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+            <h2 style="margin-bottom: 30px"><strong>Project Overview</strong>
+            </h2>
+
+            <p>The goal of this project is to program a much simpler (and less
+                copyright infringing) game in the
+                genre of Angry Birds that we'll call Angry Monkeys. You will
+                start with a socket
+                communication-based software framework that provides all of the
+                necessary tools you need to
+                play the game. The game will establish a communication link
+                between a front-end python
+                program that displays a graphical user interface and a back-end
+                C program that accepts user
+                keystrokes and computes the animation effects as well as
+                providing hints to the user. The frontend
+                program will draw the game world and send a copy of the world
+                to the back-end. Then, you will develop the game engine within
+                the back-end and compute the front-end GUI commands
+                and hints to allow a user to play the game.</p>
+
+
+            <div align="center" style="margin-bottom: 50px">
+                <img src="/portfolio/angrymonkey/angrymonkeycover.png" alt=""
+                     style="width:50%;"/>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="program" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+
+            <h2 style="margin-bottom: 30px"><strong>Programming
+                    Software/Languages</strong></h2>
+
+            <div style="margin-right: 50px;float: left;width: 150px;
+            text-align:
+            center">
+                <img src="/img/software/ubuntu.jpg" alt=""
+                     style="width:150px;"/>
+                <h4 class="chart-title" style="text-transform:none">
+                    Ubuntu</h4>
+
+                <p>Version 12.04.5 32-Bit. Later version would not work.</p>
+            </div>
+
+            <div style="margin-right: 50px;float: left;width: 150px;
+            text-align:
+            center">
+                <img src="/img/software/cplus.png" alt=""
+                     style="width:150px;"/>
+                <h4 class="chart-title" style="text-transform:none">
+                    C++</h4>
+
+                <p>Used to established a back-end process that provides key
+                    strokes and other logic to be displayed on front-end.
+                </p>
+            </div>
+
+            <div style="float: left;width: 150px; text-align:
+            center">
+                <img src="/img/software/python.png" alt=""
+                     style="width:150px; "/>
+                <h4 class="chart-title" style="text-transform:none">
+                    Python</h4>
+
+                <p>Version 2.7.Used to established a front-end process GUI
+                    that listens for communication from back-end (C++).</p>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <section id="showcase" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+            <h2 style="margin-bottom: 30px"><strong>Project
+                    Showcase</strong></h2>
+            <h4 style="margin-top: 30px"><strong>Final Result</strong></h4>
+
+            <p>The difficult part of the project is fulfilling the aspects
+                listed here. During that time I was not aware of
+                Depth-First-Search(DFS) or Breadth-First-Search(BFS) algorithm
+                . It would definitely make this project easier!
+            </p>
+
+            <p>Shot trajectories are calculated by using physics formula, the
+                cannon balls will stop when they hit something, i.e. when
+                they reach a tile occupied by a tree, branch, or monkey. When
+                a tile is hit, the tile's strength is decremented. When a
+                tile's strength reaches 0, it will be deleted.
+            </p>
+
+            <p>Game hints are also implemented. When the
+                game starts and the program receives the world, before the game
+                engine starts running, the
+                program will first find the location of the left-most monkey in
+                the game world and calculate a
+                power and angle combination that will destroy that monkey. A
+                hint will provide information to destroy the branch on which
+                the left-most monkey sits. The
+                hint will target the branch tile that destroys the entire
+                branch, the branch tile
+                that forms the joint between branch and tree.
+            </p>
+
+            <p>The propagation effect is as follow:
+            </p>
+            <ul>
+                <li><strong>Monkeys:</strong> When a monkey is deleted, it
+                    does not
+                    affect
+                    its surroundings; only
+                    the single monkey should be deleted. Any monkeys supported
+                    by the tree and branches deleted in this way
+                    should be deleted as well.
+                </li>
+                <li><strong>Branches:</strong> When a branch tile is
+                    destroyed, any branch tiles that were
+                    supported by that tile and any monkeys sitting on the branch
+                    should fall.
+                    When a branch is deleted you will need to find all branch
+                    tiles that are no
+                    longer attached to a tree directly or through other branch
+                    tiles and delete them.
+                    You should also find any monkeys that were supported by
+                    those branch tiles
+                    and delete them as well.
+                </li>
+                <li><strong>Trees:</strong> When a tree tile is destroyed,
+                    the tree tiles directly above it should all
+                    be destroyed and any branches attached to it should be
+                    destroyed.
+                </li>
+            </ul>
+
+            <video controls loop src="/portfolio/angrymonkey/angrymonkey.mp4"
+                   style="width: 100%; margin-top: 30px;
+                   margin-bottom: 30px"></video>
+
+
+        </div>
+
+
+    </section>
+
+    <% include ../sections/contact.ejs %>
+
+</div>
+<!-- end wrapper -->
+
+<% include ../partials/jsdefaults.ejs %>
+
+<script>
+    $(document).foundation();
+</script>
+
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>
+

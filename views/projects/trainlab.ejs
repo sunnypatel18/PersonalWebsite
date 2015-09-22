@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+<body>
+
+<!-- start styleswitcher, remove this -->
+<div class="switcher"></div>
+<!-- end styleswitcher -->
+
+<!-- Preloader -->
+<div class="mask">
+    <div id="loader"></div>
+</div>
+<!--/Preloader -->
+
+<div class="menu-btn-left">
+    <img alt="" src="/img/nav.svg">
+</div>
+
+<!-- start navigation -->
+
+<nav class="pushy pushy-left">
+
+    <div class="logo-small">
+        <a class="inner-link" href="/home"><img class="logo nav-logo"
+                                                alt="Kurr"
+                                                src="/img/myProfilePicture2.jpg"></a><br>
+    </div>
+
+
+    <!--start bottom menu content -->
+    <div class="bottom-content">
+        <span>Ratchapong Tangkijvorakul</span><br>
+        <span><a href="mailto:ratchapong.t@gmail.com">ratchapong.t@gmail.com</a></span><br>
+        <span>(470) 226 6955</span>
+
+    </div>
+    <!-- end bottom menu content -->
+
+    <!-- start menu -->
+    <ul class="menu">
+        <li style="background-color: #00b4ff"><a class="inner-link"
+                                                 href="/projects">
+                All Projects</a></li>
+        <li><a class="inner-link" href="#overview">Overview</a></li>
+        <li><a class="inner-link" href="#program">Program Used</a></li>
+        <li><a class="inner-link" href="#showcase">Showcase</a></li>
+    </ul>
+    <!-- end menu -->
+
+
+</nav>
+
+
+<div class="site-overlay"></div>
+
+
+<!-- end section #home -->
+
+<div id="wrapper">
+    <section id="title">
+        <h1 align="center"><%= title %></h1>
+    </section>
+    <section id="overview" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+            <h2 style="margin-bottom: 30px"><strong>Project Overview</strong>
+            </h2>
+
+            <p>State machines are the underlying components of many digital
+                systems, providing the ability for such a system to react
+                appropriately depending on inputs and past events. Sensor
+                processing systems and controllers are typical examples. In
+                this lab, a state machine will be developed as a controller
+                of two trains on shared track segments. With two trains
+                sharing a common track layout and activating sensors
+                asynchronously. Care must be taken to account for all
+                possibilities to successfully avoid collisions. The project
+                will focus on enhancing understanding of VHDL, state
+                machines, and particularly state machine design.</p>
+
+
+            <div align="center" style="margin-bottom: 50px">
+                <img src="/portfolio/trainlab/trainlabcover.png" alt=""
+                     style="width:50%;"/>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="program" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+
+            <h2 style="margin-bottom: 30px"><strong>Programming
+                    Software/Languages</strong></h2>
+
+            <div style="margin-right: 50px;float: left;width: 150px;
+            text-align:
+            center">
+                <img src="/img/software/windows7.jpg" alt=""
+                     style="width:150px;"/>
+                <h4 class="chart-title" style="text-transform:none">
+                    Windows 7</h4>
+
+                <p>Not platform dependent.</p>
+            </div>
+
+            <div style="margin-right: 50px;float: left;width: 150px;
+            text-align:
+            center">
+                <img src="/img/software/alteraquartus.png" alt=""
+                     style="width:150px;"/>
+                <h4 class="chart-title" style="text-transform:none">
+                    Altera Quartus</h4>
+
+                <p>Used to code VHDL and design state machine to run on
+                    hardware.
+                </p>
+            </div>
+
+            <div style="float: left;width: 150px; text-align:
+            center">
+                <img src="/img/software/vhdl.png" alt=""
+                     style="width:150px; "/>
+                <h4 class="chart-title" style="text-transform:none">
+                    VHDL</h4>
+
+                <p>A hardware language that is used for this assignment.</p>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <section id="showcase" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+            <h2 style="margin-bottom: 30px"><strong>Project
+                    Showcase</strong></h2>
+            <h4 style="margin-top: 30px"><strong>Final Result</strong></h4>
+
+            <p>The difficult part of the project is to account for all the
+                possibilities that can occur on the track. Fortunately this is
+                made easier by drawing out the state diagram.
+            </p>
+
+
+            <img src="/portfolio/trainlab/statemachine.png" alt=""
+                 style="width:100%; margin-top: 30px; margin-bottom: 30px"/>
+
+
+            <h4 style="margin-top: 30px"><strong>Demo</strong></h4>
+
+            <p>The demo of train lab. Switches were used to control the speed
+                of each train.
+            </p>
+
+            <div align="center">
+
+                <video controls loop src="/portfolio/trainlab/trainlab.mp4"
+                       style="width: 100%; margin-top: 10px;
+                   margin-bottom: 30px"></video>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <% include ../sections/contact.ejs %>
+
+</div>
+<!-- end wrapper -->
+
+<% include ../partials/jsdefaults.ejs %>
+
+<script>
+    $(document).foundation();
+</script>
+
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>
+

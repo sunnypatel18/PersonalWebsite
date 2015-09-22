@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Classic;
+    src: url('../../fonts/firstwebsite/Caviar_Dreams/CaviarDreams.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Marker;
+    src: url('../../fonts/firstwebsite/ThrowMyHandsUpintheAirBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Family;
+    src: url('../../fonts/firstwebsite/famig.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Age;
+    src: url('../../fonts/firstwebsite/AllAgesDEMO.ttf') format('truetype');
+}
+
+p.white {
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+}
+
+p.center {
+    text-align: center;
+}
+
+p.centers {
+    text-align: center;
+    font-size: 15px;
+}
+
+body.thank {
+    font-family: Classic;
+    font-size: 25px;
+    text-align: center;
+}
+
+body {
+    font-family: Classic;
+
+}
+
+html {
+    background: url('/img/firstwebsite/City.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+table.center {
+    text-align: center;
+    font-family: Marker;
+    padding: 2cm 3cm 2cm 3cm;
+    background-size: 200px 150px;
+    background: url('/img/firstwebsite/CommentPin.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+text.note {
+    font-family: Classic;
+    font-size: 20px;
+}
+
+div.note {
+    text-align: center;
+    font-family: Classic;
+    font-size: 20px;
+    padding: 1cm 2cm 3cm 2cm;
+    background: url('/img/firstwebsite/AboutMe1.png');
+    background-size: 600px 1200px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    border-style: solid;
+    border-width: medium;
+}
+
+div#footer {
+    text-align: center;
+}
+
+div.main {
+    width: 60%;
+    height: 100%;
+    border: 1px solid #000000;
+    position: relative;
+    left: 20%;
+    padding: 0cm 1cm 0cm 1cm;
+}
+
+div.photo {
+    float: left;
+    width: 250px;
+    height: 350px;
+    border: 2px inset #CCCCCC;
+    margin-right: 1em;
+}
+
+div.content {
+}
+
+#ClearButton {
+    background: url(/img/firstwebsite/Delete.png) no-repeat;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    border: none;
+    padding: 1cm 1cm 1cm 1cm;
+}
+
+#SubmitButton {
+    background: url(/img/firstwebsite/Tick.png) no-repeat;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    border: none;
+    padding: 1cm 1cm 1cm 1cm;
+}

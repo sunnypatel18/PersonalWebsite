@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+<body>
+
+<!-- start styleswitcher, remove this -->
+<div class="switcher"></div>
+<!-- end styleswitcher -->
+
+<!-- Preloader -->
+<div class="mask">
+    <div id="loader"></div>
+</div>
+<!--/Preloader -->
+
+<div class="menu-btn-left">
+    <img alt="" src="/img/nav.svg">
+</div>
+
+<!-- start navigation -->
+
+<nav class="pushy pushy-left">
+
+    <div class="logo-small">
+        <a class = "inner-link" href = "/home"><img
+                    class="logo nav-logo"
+                    alt="Kurr"
+                    src="/img/myProfilePicture2.jpg"></a><br>
+    </div>
+
+
+    <!--start bottom menu content -->
+    <div class="bottom-content">
+        <span>Ratchapong Tangkijvorakul</span><br>
+        <span><a href="mailto:ratchapong.t@gmail.com">ratchapong.t@gmail.com</a></span><br>
+        <span>(470) 226 6955</span>
+
+    </div>
+    <!-- end bottom menu content -->
+
+    <!-- start menu -->
+    <ul class="menu">
+        <li style="background-color: #00b4ff">
+            <a class = "inner-link" href = "/projects">All
+                Projects</a></li>
+        <li><a class="inner-link" href="#overview">Overview</a></li>
+        <li><a class="inner-link" href="#program">Program Used</a></li>
+        <li><a class="inner-link" href="#showcase">Showcase</a></li>
+    </ul>
+    <!-- end menu -->
+
+
+</nav>
+
+
+<div class="site-overlay"></div>
+
+
+<!-- end section #home -->
+
+<div id="wrapper">
+    <section id="title">
+        <h1 align="center"><%= title %></h1>
+    </section>
+    <section id="overview" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+            <h2 style="margin-bottom: 30px"><strong>Project Overview</strong>
+            </h2>
+
+            <p>I am required to create an animation of ship. Everything
+                is drawn in a 3D coordinate system. The ship is made up
+                simple 3D shape such as cylinder, rectangle etc. Other
+                objects are drawn using math function that will result in
+                simple shape in 3D coordinate. Expected animation is
+                shown here.</p>
+
+            <div align="center">
+                <video controls loop
+                       src="/portfolio/matlabship/matlabshipexample.mp4"
+                       style="width: 100%"></video>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="program" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+
+            <h2 style="margin-bottom: 30px"><strong>Programming
+                    Software/Languages</strong></h2>
+
+            <div style="margin-right: 50px;float: left;width: 150px;
+            text-align:
+            center">
+                <img src="/img/software/osxlion.jpg" alt=""
+                     style="width:150px;"/>
+                <h4 class="chart-title" style="text-transform:none">
+                    OSX Lion</h4>
+
+                <p>Version 10.7.5. The project is not platform dependent.</p>
+            </div>
+
+            <div style="margin-right: 50px;float: left;width: 150px;
+            text-align:
+            center">
+                <img src="/img/software/matlab.png" alt=""
+                     style="width:150px;"/>
+                <h4 class="chart-title" style="text-transform:none">
+                    MATLAB</h4>
+
+                <p>MATLAB R2012 is used for this assignment. Not version
+                    dependent.
+                </p>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <section id="showcase" style="padding-top: 50px; padding-bottom: 0px">
+
+        <div class="row bot-70">
+            <h2 style="margin-bottom: 30px"><strong>Project
+                    Showcase</strong></h2>
+            <h4 style="margin-top: 30px"><strong>Ship Model</strong></h4>
+
+            <p>I tried my best to draw a pirate ship as well as add some
+                colors to make the ship looks real.</p>
+            <img src = "/portfolio/matlabship/shipmodel.png" alt = ""
+                 style="width: 100%;"/>
+            <h4 style="margin-top: 30px"><strong>Animation</strong></h4>
+
+            <p>After drawing the ship and other elements, I render a final
+                animation. I added sound effect as well.</p>
+            <video controls loop src="/portfolio/matlabship/matlabship.mp4"
+                   style="width: 100%"></video>
+
+        </div>
+
+
+    </section>
+
+    <% include ../sections/contact.ejs %>
+
+</div>
+<!-- end wrapper -->
+
+<% include ../partials/jsdefaults.ejs %>
+
+<script>
+    $(document).foundation();
+</script>
+
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>
+
